@@ -1,0 +1,151 @@
+:root {
+  --green: #2ecc71;
+  --gray: #cfd6dc;
+  --light: #f5f7f9;
+  --dark: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e8f5e9, #f5f7f9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  max-width: 520px;
+  width: 100%;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  color: #555;
+}
+
+.box {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+  background: var(--light);
+}
+
+/* BOTÃO PEQUENO */
+.small-btn {
+  align-self: flex-start;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #e0f4ea;
+  color: #1e7e4f;
+}
+
+.transport {
+  margin-top: 24px;
+}
+
+.transport-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.transport-options button {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--gray);
+  background: #fff;
+  cursor: pointer;
+}
+
+.transport-options button.active {
+  background: var(--green);
+  color: #fff;
+}
+
+.calculate {
+  margin-top: 24px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  border: none;
+  background: var(--green);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.result {
+  display: none;
+  margin-top: 20px;
+  background: #ecf9f1;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  color: #1e7e4f;
+  font-weight: bold;
+}
+
+.theme-btn {
+  margin: 16px auto;
+  display: block;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* DARK MODE */
+body.dark {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+}
+
+body.dark .container {
+  background: #1f1f1f;
+  color: #eee;
+}
+
+body.dark input {
+  background: #2a2a2a;
+  color: #eee;
+  border-color: #444;
+}
+
+body.dark h2,
+body.dark label {
+  color: #bbb;
+}
+
+body.dark .result {
+  background: #1b3b2a;
+  color: #a8f3c4;
+}

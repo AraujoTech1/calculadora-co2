@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de emissão de CO₂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calculadora de emissão de CO₂</h1>
+    <h2>
+      Calcule as emissões de CO₂ das suas viagens e contribua para um planeta mais sustentável.
+    </h2>
+
+    <button id="toggle-theme" class="theme-btn">🌙 Modo escuro</button>
+
+    <div class="box">
+      <label>Origem</label>
+      <input id="origem" placeholder="Digite a Cidade do destino inicial">
+
+      <label>Destino Final</label>
+      <input id="destino final" placeholder="Digite a Cidade do destino final">
+
+      <!-- NOVO BOTÃO -->
+      <button id="btn-distancia" class="small-btn">
+        📏 Calcular distância
+      </button>
+
+      <label>Distância (KM)</label>
+      <input id="distancia" placeholder="Distância calculada automaticamente" disabled>
+    </div>
+
+    <div class="transport">
+      <h3>Meio de transporte</h3>
+      <div class="transport-options">
+        <button data-type="carro">🚗 Carro</button>
+        <button data-type="onibus">🚌 Ônibus</button>
+        <button data-type="caminhao">🚚 Caminhão</button>
+        <button data-type="trem">🚆 Trem</button>
+      </div>
+    </div>
+
+    <button id="calcular" class="calculate">Calcular emissão</button>
+
+    <div id="resultado" class="result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
