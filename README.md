@@ -55,7 +55,7 @@ Essa API é utilizada para gerar dicas sustentáveis com inteligência artificia
 - ✓  Teste do cálculo de emissão de CO₂ para todos os meios de transporte
 - ✓  Teste da alternância entre modo claro e modo escuro
 <div align="center">
-  <img src="./imagem/img01.png" alt="Imagem" width="300">
+  <img src="./imagem/Img01.png" alt="Imagem" width="300">
   <p><i>Imagem do teste</i></p>
 </div>
 
